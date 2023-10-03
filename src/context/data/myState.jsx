@@ -49,7 +49,7 @@ function MyState(props) {
     }
 
     useEffect(() => {
-        getAllBlogs();
+        getAllBlogs()
     }, []);
 
     // Blog Delete Function 

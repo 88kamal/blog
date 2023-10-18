@@ -2,6 +2,7 @@ import { Button } from '@material-tailwind/react'
 import React, { useContext } from 'react'
 import myContext from '../../context/data/myContext';
 import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
 
 function BlogPostCard() {
   const context = useContext(myContext);
@@ -83,6 +84,7 @@ function BlogPostCard() {
           </div>
 
           {/* See More Button  */}
+          <Link to={'/allblogs'}>
           <div className="flex justify-center my-5">
             <Button
               style={{
@@ -97,6 +99,7 @@ function BlogPostCard() {
               See More
             </Button>
           </div>
+          </Link>
         </div>
       </section >
     </div >
